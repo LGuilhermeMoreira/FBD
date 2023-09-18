@@ -1,0 +1,5 @@
+CREATE TABLE ESTRANHOS{
+	nome char[100]
+	idade int
+	email varchar[100]
+}
