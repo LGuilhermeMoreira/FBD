@@ -1,0 +1,19 @@
+PRIMEIRA PERGUNTA:
+SELECT Nome
+FROM Usuario INNER JOIN Dieta
+ON Usuario.CpfUsuario = Dieta.CpfUsuario
+WHERE Dieta_Alimentos LIKE '%arroz integral%';
+
+SEGUNDA PERGUNTA:
+SELECT Parentesco, CpfUsuario
+FROM Usuario_Parentesco
+WHERE CpfUsuario IN (SELECT CpfUsuario FROM Usuario WHERE Nome = 'Lucas');
+
+TERCEIRA PERGUNTA: 
+SELECT Efeitos_Colaterais_, Medicacao.Nome
+FROM Medicacao INNER JOIN Medicacao_Efeitos_Colaterais_
+ON Medicacao.MedicacaoId = Medicacao_Efeitos_Colaterais_.MedicacaoId
+INNER JOIN Registro_Medico
+ON Medicacao.RegistroId = Registro_Medico.RegistroId
+WHERE Medicacao.Tipo = 'Paracetamol'
+AND Registro_Medico.CpfUsuario = 'Lucas';
