@@ -1,0 +1,5 @@
+olhar a questão 1 - o unico erro foi a saida de Porto Alegre, as outras saidas estavam certas
+
+olhar a questão 4 -  Faltou uma elemento da saida apenas (erro de compreensão da questão)
+
+olhar questão 5 -  Achei que tinha que printar todo mundo e compara os salários (erro de compreensão da questão)
